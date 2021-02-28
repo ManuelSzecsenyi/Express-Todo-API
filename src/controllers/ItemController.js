@@ -2,7 +2,7 @@ import ItemModel from "../models/Item";
 
 const Item = {
     create(req, res){
-        if (!req.body.text) {
+        if (!req.body.text && !req.body.done) {
             return res.status(400).send({'message': 'All fields are required'})
         }
         const item = ItemModel.create(req.body);
@@ -13,7 +13,7 @@ const Item = {
         return res.status(200).send(items);
     },
     updateItem(req, res){
-        if (!req.body.text) {
+        if (!req.body.text && !req.body.done) {
             return res.status(400).send({'message': 'All fields are required'})
         }
         const item = ItemModel.update(req.body);

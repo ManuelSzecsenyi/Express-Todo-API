@@ -11,6 +11,7 @@ class TodoItems {
         const newItem = {
             id: uuidv4(),
             text: item.text,
+            done: item.done,
             createdAt: dayjs()
         }
 
@@ -27,6 +28,7 @@ class TodoItems {
         const index = this.todoItems.indexOf(item);
 
         this.todoItems[index].text = updatedItem.text;
+        this.todoItems[index].done = updatedItem.done;
 
         return this.todoItems[index];
     }
