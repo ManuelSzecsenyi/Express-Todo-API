@@ -5,15 +5,18 @@
   "main": "index.js",
   "dependencies": {
     "dayjs": "^1.10.4",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.4.5",
     "babel-watch": "^7.4.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-start": "babel-watch server.js",
+    "build": "babel server.js --out-dir build"
   },
   "repository": {
     "type": "git",
