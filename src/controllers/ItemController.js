@@ -10,6 +10,7 @@ const Item = {
     },
     getAll(req, res){
         const items = ItemModel.getAll();
+        console.log("Fetched items", items.length, "items.");
         return res.status(200).send(items);
     },
     updateItem(req, res){

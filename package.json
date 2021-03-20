@@ -9,14 +9,15 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.4.5",
     "babel-watch": "^7.4.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-start": "babel-watch server.js",
-    "build": "babel server.js --out-dir build"
+    "dev-start": "babel-watch build/server.js",
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",

@@ -5,6 +5,30 @@ class TodoItems {
 
     constructor() {
         this.todoItems = [];
+        this.create({
+            text: "Abwasch machen",
+            done: false
+        });
+        this.create({
+            text: "Unterlagen an Chef schicken",
+            done: true
+        });
+        this.create({
+            text: "Müll rausbringen",
+            done: false
+        })
+        this.create({
+            text: "Installateur anrufen",
+            done: false
+        })
+        this.create({
+            text: "Staubsaugen",
+            done: false
+        })
+        this.create({
+            text: "Stefan anrufen",
+            done: false
+        })
     }
 
     create(item){

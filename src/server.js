@@ -1,5 +1,5 @@
 import express from 'express';
-import TodoItem from "./src/controllers/ItemController"
+import TodoItem from "./controllers/ItemController"
 
 const app = express();
 
