@@ -7,7 +7,7 @@ class TodoItems {
         this.todoItems = [];
         this.create({
             text: "Abwasch machen",
-            done: false
+            done: true
         });
         this.create({
             text: "Unterlagen an Chef schicken",
