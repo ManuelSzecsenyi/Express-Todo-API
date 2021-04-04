@@ -9,5 +9,5 @@ app.get("/", TodoItem.getAll);
 app.post("/", TodoItem.create);
 app.put("/", TodoItem.updateItem)
 
-app.listen(3000)
-console.log('Express API running on port ', 300)
+app.listen(process.env.PORT || 3000)
+console.log('Express API running on port ', 3000)

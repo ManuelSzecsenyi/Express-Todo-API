@@ -11,5 +11,5 @@ app.use(_express["default"].json());
 app.get("/", _ItemController["default"].getAll);
 app.post("/", _ItemController["default"].create);
 app.put("/", _ItemController["default"].updateItem);
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 5000)
 console.log('Express API running on port ', 3000);
